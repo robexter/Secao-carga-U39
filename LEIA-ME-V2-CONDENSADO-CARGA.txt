@@ -1,0 +1,33 @@
+SEÇÃO DE CARGA U-39 — V2
+EMERGÊNCIA: PRESENÇA DE CONDENSADO NA CARGA
+
+Base documental:
+- PE.REF.OPE.CCF.089 Rev.02 — seção 5.2.3
+- PE.REF.OPE.CCF.089.M03 Rev.02
+
+Implementação:
+- condensado-carga-u39.html: treinamento CIC refinado
+- sw.js: cache V2 + injeta cartão de acesso na tela principal sem alterar a imagem/base64 do index.html
+
+Refinamentos:
+- diagnóstico por tendências
+- bifurcação U-39 tripou?
+- carga fria antes de carga quente
+- testes individuais FIC-39250/251/252/253
+- bloquear somente após identificação
+- rebalanceamento das demais vazões
+- gate duplo para retorno FIC-39152 AUTO
+- avaliação CIC difícil com alternativas próximas
+- diferença PT-39152 / PI-39152 explicitada, sem correção silenciosa
+
+PUBLICAÇÃO NO GITHUB
+A integração de escrita retornou HTTP 403 neste atendimento, portanto o repositório online não foi alterado diretamente.
+
+Para aplicar manualmente no repositório robexter/Secao-carga-U39:
+1. Adicionar condensado-carga-u39.html na raiz.
+2. Substituir sw.js pelo arquivo deste pacote.
+3. Commit changes.
+4. Abrir https://robexter.github.io/Secao-carga-U39/?v=2 e recarregar.
+
+O novo sw.js injeta automaticamente o cartão de emergência antes da grade de atalhos, sem regravar o index.html nem a imagem base64.
+Se preferir inserir o cartão manualmente no index.html, use ATALHO-MANUAL-SECAO-CARGA.html antes de <section class="quick-grid">.
