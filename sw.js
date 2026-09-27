@@ -9,8 +9,8 @@ const CARD = `
 <section id="${CARD_ID}" class="card" style="padding:16px;border-color:#396c86;background:linear-gradient(180deg,#102b3c,#0a1822);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center">
   <div>
     <div style="font-size:11px;font-weight:900;letter-spacing:.08em;color:#9ee5ff;margin-bottom:5px">💧 EMERGÊNCIA DE CARGA • CIC</div>
-    <b style="font-size:18px">Presença de Condensado </b>
-    <p style="margin:6px 0 0;color:#9db3c5;line-height:1.45">•</p>
+    <b style="font-size:18px">Presença de Condensado</b>
+    <p style="margin:6px 0 0;color:#9db3c5;line-height:1.45"></p>
   </div>
   <a class="btn primary" href="./condensado-carga-u39.html?v=2" style="text-decoration:none;white-space:nowrap">💧 Treinar emergência</a>
 </section>
